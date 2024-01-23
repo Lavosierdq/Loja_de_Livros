@@ -47,3 +47,4 @@
   1. Autor (com todas as informações) com seus Livros (com todas as informações) e o total de livros publicados
   2. Fornecedor(com todas as informações) com todos os autores(com todas as informações) e livros (com todas as informações)
   3. Livro com a montagem (com todas as informações) com suas peças(com todas as informações), o total de peças e o custo total da montagem
+  4. fazendo teste do arquivo.
