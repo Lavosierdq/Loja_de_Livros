@@ -1,7 +1,7 @@
 class AutorController < ApplicationController
 
   def index
-    @autors = Autor.all
+    @autor = Autor.all
   end
 
   def new
