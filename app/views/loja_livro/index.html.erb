@@ -1,14 +1,11 @@
 <h1>Olá Mundo</h1>
 
-<% @autors.each do |autor| %>
+<%= link_to "Cadastrar" ,"loja_livro/new",class: "botao-estilizado" %>
+
+<% @autor.each do |autor| %>
   <div>
     <h1><%= autor.nome %></h1>
   </div>
 <% end %>
 
-<% @livros.each do |livro|  %> 
-  <div>
-    <h1><%= livro.titulo %></h1>
-  </div>
-<% end %>
 
