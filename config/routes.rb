@@ -6,10 +6,13 @@ Rails.application.routes.draw do
   #get "up" => "rails/health#show", as: :rails_health_check
 
   # Rotas definidas para o model Autor
-  get "loja_livro/new", to:"loja_livro#new", as: :new_create
-  post "loja_livro",    to:"loja_livro#create", as: :create_autor
+  get "autor/new", to:"autor#new",    as: :autor_new
+  post "autor",    to:"autor#create", as: :create_autor
+
   # Rotas definidas para o model Livro
-  get "livro/cadastro", to:"livro#livro_cadastro"
+  get "livro/cadastro", to:"livro#livro_cadastro", as: :livros_cadastro
+  post "livro",    to:"livro#create", as: :create_livros
   # Defines the root path route ("/")
-  root "loja_livro#index"
+  #
+  root "autor#index"
 end

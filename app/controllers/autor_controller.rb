@@ -1,7 +1,6 @@
-class LojaLivroController < ApplicationController
+class AutorController < ApplicationController
   def index
     @autor = Autor.all
-    @livro = Livro.all
   end
 
   def new
