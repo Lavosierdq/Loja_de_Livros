@@ -1,4 +1,5 @@
 class AutorController < ApplicationController
+
   def index
     @autor = Autor.all
   end
@@ -9,10 +10,12 @@ class AutorController < ApplicationController
 
   def create
     @autor = Autor.new(autors_params)
+
     
     if @autor.save
       redirect_to root_path
     else
+
       render :new, status: :unprocessable_entity
     end
   end
@@ -20,6 +23,15 @@ class AutorController < ApplicationController
   private
 
   def autors_params
+    params.require(:autor).permit(:nome)
+  end
+
+
+      render :new,status: :unprocessable_entity
+    end
+  end
+
+  def autor_params
     params.require(:autor).permit(:nome)
   end
 

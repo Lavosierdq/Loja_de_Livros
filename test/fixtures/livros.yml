@@ -2,6 +2,8 @@
 
 one:
   titulo: MyString
+  autor: one
 
 two:
   titulo: MyString
+  autor: two

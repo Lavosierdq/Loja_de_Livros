@@ -13,6 +13,5 @@ Rails.application.routes.draw do
   get "livro/cadastro", to:"livro#new", as: :livro_new
   post "livro/cadastro",    to:"livro#create", as: :create_livros
   # Defines the root path route ("/")
-  #
   root "autor#index"
 end
