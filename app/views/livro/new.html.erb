@@ -1,0 +1,17 @@
+<h1>arquivo livro_cadastro</h1>
+
+<h1> Cadastrar Livro</h1>
+
+<%= form_with model:@livro,url:livro_new_path do |form| %>
+  <div>
+    <%= form.label :titulo %>
+    <%= form.text_field :titulo %>
+  </div>
+
+  <div>
+    <%= form.label :autor_id %>
+    <%= form.collection_select :autor_id,Autor.all, :id, :nome,prompt:"Selecione um autor" %>
+  </div>
+
+  <%= form.submit "Cadastrar Livro" %>
+<% end %>

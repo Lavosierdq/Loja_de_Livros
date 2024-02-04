@@ -1,3 +1,17 @@
+
+<h1>Cadastrar Autor</h1>
+<%= form_with model:@autor, url:create_autor_path,method: :post do |form| %>
+  <div>
+      <%= form.label :nome %>
+      <%= form.text_field :nome %>
+  </div>
+
+<div>
+  <%= form.submit "Salvar" %>
+</div>
+
+<% end %>
+
 <h1> sou o arquivo new</h1>
 
 <%= form_with model: @autor do |form| %>
