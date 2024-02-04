@@ -1,7 +1,7 @@
 class LivroController < ApplicationController
 
-  def cadastro
-    @livro  = Livro.all
+  def new
+    @livro = Livro.new
   end
 
   def create
@@ -18,7 +18,7 @@ class LivroController < ApplicationController
   private 
 
   def livro_params
-    params.require(:livro).permit(:livro,:autor_id)
+    params.require(:livro).permit(:titulo,:autor_id)
   end
   
 end

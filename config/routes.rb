@@ -10,8 +10,8 @@ Rails.application.routes.draw do
   post "autor",    to:"autor#create", as: :create_autor
 
   # Rotas definidas para o model Livro
-  get "livro/cadastro", to:"livro#livro_cadastro", as: :livros_cadastro
-  post "livro",    to:"livro#create", as: :create_livros
+  get "livro/cadastro", to:"livro#new", as: :livro_new
+  post "livro/cadastro",    to:"livro#create", as: :create_livros
   # Defines the root path route ("/")
   #
   root "autor#index"
