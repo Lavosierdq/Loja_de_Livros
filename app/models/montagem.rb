@@ -1,0 +1,2 @@
+class Montagem < ApplicationRecord
+end
