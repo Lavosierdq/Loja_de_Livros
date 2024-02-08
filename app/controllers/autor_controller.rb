@@ -26,13 +26,7 @@ class AutorController < ApplicationController
     params.require(:autor).permit(:nome)
   end
 
-
-      render :new,status: :unprocessable_entity
-    end
-  end
-
   def autor_params
     params.require(:autor).permit(:nome)
   end
-
 end
