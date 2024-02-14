@@ -2,8 +2,10 @@
 
 one:
   titulo: MyString
+  isbn: MyString
   autor: one
 
 two:
   titulo: MyString
+  isbn: MyString
   autor: two

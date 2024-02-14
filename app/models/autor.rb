@@ -1,5 +1,3 @@
 class Autor < ApplicationRecord
-
-has_many :livros
-
+  has_many:livros
 end
