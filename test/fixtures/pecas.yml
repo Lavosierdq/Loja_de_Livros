@@ -1,11 +1,7 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  titulo: MyString
-  isbn: MyString
-  autor: one
+  nome_peca: MyString
 
 two:
-  titulo: MyString
-  isbn: MyString
-  autor: two
+  nome_peca: MyString
